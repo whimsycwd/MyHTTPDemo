@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>whimsycwd's MyHttpDemo POST</title>
+</head>
+<body>
+
+<center>
+<p>
+    Plaese fill in Name & ID, upload Student's Picture<br/>
+    Use queryById/ID to lookup infos.
+</p>
+    <form action = "./serviceImage" method="post" enctype="multipart/form-data">
+    <table>
+    <tr>
+        <td>name</td>
+        <td>:</td>
+        <td><input type="text" name="name" /> </td>
+        </tr>
+    <tr>
+        <td>Id</td>
+        <td>:</td>
+        <td> <input type="text" name="id" /></td>
+    </tr>
+     <tr><td>
+         <input type="file" name="imageFile" />
+     </td>
+        <td></td>
+         <td>
+          <input type="submit" name="submit"/>
+
+         </td>
+     </tr>
+    </table>
+</form>
+
+</center>
+</body>
+</html>
