@@ -145,11 +145,12 @@ Header lines 提供了请求或者响应主题的信息.  本项目中用到了
 3. 	在服务端接受客户传来的数据时, 如何判定终止比较trick. 尝试了通过特殊的`bye`字符串来进行通讯, 但是这样实现出来不能够兼容浏览器请求, 最后想到了可以通过Content-Length header的信息来结束通讯,关闭socket
 
 
-### 代码一览
-代码难度不大, 在容易出错的地方加了比较详细的注释, 来看一下核心代码
+#### 如何使用
 
-
-#### 如何构建
+1.  git clone https://github.com/whimsycwd/MyHTTPDemo.git
+2.  运行Server.java
+3.  打开浏览器127.0.0.1:10080/index.html可查看创建页面, 填写姓名, 学号, 上传图片
+4.  创建成功后, 比如创建了11300240057学号, 127.0.0.1:10080/queryById/1003545371 可得到查看页面.
 
 
 
@@ -159,3 +160,5 @@ Header lines 提供了请求或者响应主题的信息.  本项目中用到了
 
 1. http://jmarshall.com/easy/http/
 2. http://tools.ietf.org/html/rfc2616
+3. https://docs.oracle.com/javase/tutorial/networking/sockets/clientServer.html
+4. http://bbs.csdn.net/topics/390290625?page=1#post-393011354
